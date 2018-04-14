@@ -54,12 +54,12 @@ let begin_flash = function () {
 var timer = null;
 let timer_begin = function () {
     if(timer){
-        clearInterval(timer);
+        end_flash();
     }
     timer = window.setInterval("begin_flash();", 1000);
 }
 //end
-let end_flash = function () {
+var end_flash = function () {
     clearInterval(timer);
     console.log(timer);
     for(let i=0; i<square.length; i++) {
