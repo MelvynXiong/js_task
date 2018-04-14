@@ -1,0 +1,9 @@
+/*设置九宫格的样式*/
+.square{
+    padding-left: 31%;
+    padding-top: 31%;
+    margin:1.16%;
+    border-radius: 10%;
+    background-color: orange;
+    float:left;
+}
