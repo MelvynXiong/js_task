@@ -42,6 +42,10 @@ Array.prototype.contains = function(val) {
 let square = document.querySelectorAll(".square");
 //begin
 let begin_flash = function () {
+    //every time we click begin, reset the color of boxes
+    for(let i=0; i<square.length; i++) {
+        square[i].style.backgroundColor = "#e9a426"
+    }
     //get three random num between 0-8
     let nums = getThreeNums();
     //get three random colors
